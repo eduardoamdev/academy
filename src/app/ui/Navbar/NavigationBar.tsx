@@ -17,9 +17,7 @@ export function NavigationBar() {
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink href="/" active>
-          Home
-        </NavbarLink>
+        <NavbarLink href="/">Home</NavbarLink>
         <NavbarLink as={Link} href="/book">
           Book
         </NavbarLink>
