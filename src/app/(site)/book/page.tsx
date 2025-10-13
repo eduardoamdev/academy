@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
 import InlineWidget from "@calcom/embed-react";
 
-export default function Home() {
+export default function Book() {
   useEffect(() => {
     (async () => {
       const cal = await getCalApi({ namespace: "booking" });
@@ -17,13 +17,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white flex items-start justify-center p-6">
-      <InlineWidget
-        calLink="eduardo-alvarez-2hzm31"
-        namespace="booking"
-        config={{ layout: "month_view", theme: "light" }}
-        style={{ width: "100%", height: "900px" }}
-      />
-    </main>
+    <InlineWidget
+      calLink="eduardo-alvarez-2hzm31"
+      namespace="booking"
+      config={{ layout: "month_view", theme: "light" }}
+      style={{ width: "100%", height: "900px" }}
+    />
   );
 }
