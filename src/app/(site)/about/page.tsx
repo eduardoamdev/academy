@@ -1,5 +1,9 @@
 const About = () => {
-  return <h3>About Page</h3>;
+  return (
+    <div className="mt-[20rem]">
+      <h2 className="text-[2rem]">About</h2>
+    </div>
+  );
 };
 
 export default About;

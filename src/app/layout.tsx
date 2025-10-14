@@ -29,7 +29,18 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavigationBar />
-        <main className="min-h-screen bg-black flex items-start justify-center p-6">
+        <main
+          className="
+            min-h-screen 
+            flex items-start justify-center p-6 
+            bg-gradient-to-br from-black via-gray-900 to-black
+            before:content-[''] before:absolute before:inset-0 
+            before:bg-[radial-gradient(circle_at_20%_30%,rgba(99,102,241,0.15),transparent_60%)]
+            after:content-[''] after:absolute after:inset-0 
+            after:bg-[radial-gradient(circle_at_80%_70%,rgba(236,72,153,0.15),transparent_60%)]
+            relative overflow-hidden
+          "
+        >
           {children}
         </main>
       </body>
