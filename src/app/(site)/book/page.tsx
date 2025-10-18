@@ -17,11 +17,13 @@ export default function Book() {
   }, []);
 
   return (
-    <InlineWidget
-      calLink="eduardo-alvarez-2hzm31"
-      namespace="booking"
-      config={{ layout: "month_view", theme: "light" }}
-      style={{ width: "100%", height: "900px" }}
-    />
+    <div className="pt-[50px] pb-[100px] min-[1350px]:pt-0 min-[1350px]:pb-0">
+      <InlineWidget
+        calLink="eduardo-alvarez-2hzm31"
+        namespace="booking"
+        config={{ layout: "month_view", theme: "light" }}
+        style={{ width: "100%", height: "900px" }}
+      />
+    </div>
   );
 }
