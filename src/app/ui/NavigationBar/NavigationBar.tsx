@@ -18,7 +18,7 @@ export function NavigationBar() {
       <NavbarCollapse>
         <NavbarLink href="/">Home</NavbarLink>
         <NavbarLink href="/book">Book</NavbarLink>
-        <NavbarLink href="/about">About</NavbarLink>
+        <NavbarLink href="/contact">Contact</NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );
