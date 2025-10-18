@@ -42,7 +42,6 @@ export default function RootLayout({
             after:pointer-events-none after:-z-10
           "
         >
-          {/* Keep page content above the decorative layers */}
           <div className="relative z-10 w-full">{children}</div>
         </main>
       </body>

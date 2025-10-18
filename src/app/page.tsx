@@ -6,9 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 export default function Home() {
   return (
     <div className="mt-16 sm:mt-20 lg:mt-32 px-4 sm:px-6 md:px-10 lg:px-16">
-      {/* Stack on <1350px; side-by-side on ≥1350px */}
       <section className="mx-auto max-w-7xl flex flex-col min-[1350px]:flex-row items-start min-[1350px]:items-center gap-8 sm:gap-10 min-[1350px]:gap-14">
-        {/* Left: Headline + copy */}
         <div className="w-full min-[1350px]:w-1/2">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
             Learn{" "}
@@ -40,10 +38,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right on ≥1350px; bottom on smaller screens */}
         <div className="w-full min-[1350px]:w-1/2 flex justify-center min-[1350px]:justify-end mt-4 min-[1350px]:mt-0 overflow-x-auto">
-          {/* Fixed size per breakpoint (independent of content) */}
-          {/* Mobile: 320x240  •  sm: 420x300  •  md: 520x360  •  ≥1350px+: 550x400 */}
           <div className="shrink-0 w-[320px] h-[280px] sm:w-[420px] sm:h-[340px] md:w-[520px] md:h-[400px] min-[1350px]:w-[550px] min-[1350px]:h-[460px]">
             <CodeTyper />
           </div>
@@ -99,7 +94,6 @@ function CodeTyper() {
       className="rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-xl w-full h-full flex flex-col"
       aria-label="Live HTML typing preview"
     >
-      {/* Faux header bar */}
       <div className="flex items-center gap-2 px-4 py-2 sm:py-3 text-xs sm:text-sm ring-1 ring-inset ring-white/5 bg-white/5 backdrop-blur flex-none">
         <span
           className="inline-block h-3 w-3 rounded-full"
@@ -116,7 +110,6 @@ function CodeTyper() {
         <span className="ml-3 text-white/70">index.html</span>
       </div>
 
-      {/* Scrolling code area; reserve scrollbar gutter to avoid width shift */}
       <pre className="flex-1 p-4 sm:p-5 md:p-6 text-[13px] sm:text-sm md:text-[0.925rem] leading-relaxed overflow-auto [scrollbar-gutter:stable]">
         <code className="whitespace-pre-wrap break-words font-mono">
           {text}
