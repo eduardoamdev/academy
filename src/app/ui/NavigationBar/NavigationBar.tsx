@@ -5,7 +5,6 @@ import {
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
-import Link from "next/link";
 
 export function NavigationBar() {
   return (
@@ -14,7 +13,7 @@ export function NavigationBar() {
       rounded
       className="fixed top-0 left-0 w-full z-50 !bg-transparent"
     >
-      <NavbarBrand as={Link} href="https://flowbite-react.com">
+      <NavbarBrand href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           Amdev Academy
         </span>
@@ -22,12 +21,8 @@ export function NavigationBar() {
       <NavbarToggle />
       <NavbarCollapse>
         <NavbarLink href="/">Home</NavbarLink>
-        <NavbarLink as={Link} href="/book">
-          Book
-        </NavbarLink>
-        <NavbarLink as={Link} href="/about">
-          About
-        </NavbarLink>
+        <NavbarLink href="/book">Book</NavbarLink>
+        <NavbarLink href="/about">About</NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );
