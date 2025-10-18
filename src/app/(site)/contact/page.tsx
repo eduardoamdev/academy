@@ -25,7 +25,7 @@ const Contact = () => {
         </Link>
 
         <a
-          href="mailto:eduarodamdev@gmail.com"
+          href="mailto:eduardoamdev@gmail.com"
           className="rounded-2xl px-6 py-3 ring-1 ring-white/20 hover:ring-white/40 transition text-sm font-medium"
         >
           Send an Email
