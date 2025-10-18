@@ -8,11 +8,7 @@ import {
 
 export function NavigationBar() {
   return (
-    <Navbar
-      fluid
-      rounded
-      className="fixed top-0 left-0 w-full z-50 !bg-transparent"
-    >
+    <Navbar fluid rounded className="fixed top-0 left-0 w-full z-50 !bg-black">
       <NavbarBrand href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           Amdev Academy
