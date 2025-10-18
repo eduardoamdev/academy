@@ -20,9 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
@@ -31,17 +29,21 @@ export default function RootLayout({
         <NavigationBar />
         <main
           className="
-            min-h-screen 
-            flex items-start justify-center p-6 
+            relative isolate overflow-hidden
+            min-h-screen flex items-start justify-center p-6
             bg-gradient-to-br from-black via-gray-900 to-black
-            before:content-[''] before:absolute before:inset-0 
+
+            before:content-[''] before:absolute before:inset-0
             before:bg-[radial-gradient(circle_at_20%_30%,rgba(99,102,241,0.15),transparent_60%)]
-            after:content-[''] after:absolute after:inset-0 
+            before:pointer-events-none before:-z-10
+
+            after:content-[''] after:absolute after:inset-0
             after:bg-[radial-gradient(circle_at_80%_70%,rgba(236,72,153,0.15),transparent_60%)]
-            relative overflow-hidden
+            after:pointer-events-none after:-z-10
           "
         >
-          {children}
+          {/* Keep page content above the decorative layers */}
+          <div className="relative z-10 w-full">{children}</div>
         </main>
       </body>
     </html>
