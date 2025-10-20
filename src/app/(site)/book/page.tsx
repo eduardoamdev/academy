@@ -17,7 +17,7 @@ export default function Book() {
   }, []);
 
   return (
-    <div className="pt-[50px] pb-[100px] min-[1350px]:pt-0 min-[1350px]:pb-0">
+    <div className="pt-[100px] pb-[100px] min-[767px]:pt-0 min-[767px]:pb-0">
       <InlineWidget
         calLink="eduardo-alvarez-2hzm31"
         namespace="booking"
